@@ -1,0 +1,160 @@
+/* MENU MOBILE */
+
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+  background-color: #010326;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #010326;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  border-left: solid 3px #D9D9D9;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #D9D9D9;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover, #main span:hover{
+  color: #0FEC0B;
+  text-decoration: underline;  
+  margin: 0 10px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: -32px;
+  font-size: 36px;
+  margin-right: 50px;
+}
+
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: margin-right .5s;
+  background-color:#010326;
+  color: #D9D9D9;
+  width: 100%;
+  font-size: 30px;
+}
+
+#main img {
+  min-width: 50%;
+  width: 50%;
+}
+
+#main span{
+  padding: 30px;
+}
+
+
+/* @media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} */
+
+
+/* CARROSSEL MOBILE  */
+
+* {box-sizing: border-box;}
+
+body {
+  font-family: Verdana, sans-serif;
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+ vertical-align: middle;
+ border-radius: 15px;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto 30px;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  margin: 0 1px;
+  background-color: #D9D9D9;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+/* @media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+} */
+
+
+/* REDES SOCIAIS */
+
+#redes a {
+  position: absolute;
+  left: -60px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 10px;
+  color: #FFF;
+  border-radius: 0 5px 5px 0;
+  text-align: end;
+}
+
+#redes a:hover {
+  left: 0;
+  background-color: #0ebb0b;
+
+}
+
+#whatsapp {
+  top: 300px;
+  background-color: #0fec0b;
+}
+
+#instagram {
+  top: 350px;
+  background-color: #0FEC0B;
+}
+
+#email {
+  top: 400px;
+  background-color: #0fec0b;
+}

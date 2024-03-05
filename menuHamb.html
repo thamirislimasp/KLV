@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/estiloMobile.css">
+</head>
+
+<body>
+
+  <!-- MENU MOBILE 320 -->
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Quem somos</a>
+    <a href="#">Serviços</a>
+    <a href="#">Equipamentos</a>
+    <a href="#">Benefícios</a>
+    <a href="#">Contato</a>
+  </div>
+
+  <div id="main">
+    <img src="logo klv.gif" alt=""> 
+    <span onclick="openNav()">&#9776;</span>     
+  </div>
+
+  <!-- CARROSSEL MOBILE 300 -->
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="imagens/carrosel.webp" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="imagens/carrosel.webp" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">  
+      <img src="imagens/carrosel.webp" style="width:100%">
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+
+    <!-- Icones REDES SOCIAIS -->
+
+    <div id="redes" class="redesSociais">
+      <a href="#" id="whatsapp">Whatsapp</a>
+      <a href="#" id="instagram">Instagram</a>
+      <a href="#" id="email">E-mail</a>
+    </div>
+
+
+
+
+
+<script>
+  // MENU MOBILE
+
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginRight = "250px";
+    document.body.style.backgroundColor = "#010326";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginRight= "0";
+    document.body.style.backgroundColor = "#010326";
+
+  }
+
+  // CARROSSEL MOBILE
+
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000);
+  }
+</script>
+   
+</body>
+</html> 

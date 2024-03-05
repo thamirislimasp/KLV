@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+    background-color: #010326;
+}
+
+.accordion {
+  background-color: #d9d9d9;
+  color: #444;
+  cursor: pointer;
+  padding: 15px;
+  width: 80%;
+  border: solid 2px #0fec0b;
+  border-radius: 15px;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+  margin : 5px 30px;
+
+}
+.accordion:hover{
+    background-color:  rgba(15, 236, 11,0.6);
+}
+
+.active, .accordion:hover {
+  background-color: rgba(15, 236, 11,0.6);
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 30px;
+  background-color: white;
+  max-height: 0;
+  overflow:hidden;
+  transition: max-height 0.2s ease-in-out;
+  border: solid  2px #0fec0b;
+  width: 80%;
+
+}
+   h2 {
+   text-transform: uppercase;
+  text-align:center;
+  color: white;
+ border-bottom:  solid 2px #0fec0b;
+   
+  }
+  p{
+    color: white;
+  }
+
+  #texto-servicos{
+    color: black ;
+
+  }
+
+</style>
+</head>
+<body>
+
+<h2>Servicos</h2>
+<p>Conheca todos os nossos servicos diponiveis:</p>
+<button class="accordion">Locacao</button>
+<div class="panel">
+  <p id="texto-servicos">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Reparos</button>
+<div class="panel">
+  <p id="texto-servicos">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+</div>
+
+<button class="accordion">Upgrade</button>
+<div class="panel">
+  <p id="texto-servicos">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Vendas</button>
+<div class="panel">
+  <p id="texto-servicos">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Descarte</button>
+<div class="panel">
+  <p id="texto-servicos">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+.menu {
+    background-color: #010326;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+
+}
+
+ul {
+    display: flex;
+    margin: 10px;
+    list-style: none;
+    padding: 20px;
+    align-items: center;
+}
+
+#logo {
+    width: 350px;
+    height: 100px;
+}
+
+.botao {
+    background-color: #4A6D1D;
+    margin: 10px;
+    width: 120px;
+    height: 30px;
+    padding: 8px;
+    border-radius: 20px;
+    font-family: 'Franklin Gothic Medium';
+    color: white;
+
+}
+
+.botao:hover {
+    background-color: #0FEC0B;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    margin: 0 200px;
+}
+
+#carrosel{
+    width: 1200px;
+    height: 500px;
+    
+}
+
+/* 
+#grad2 {
+    height: 150px;
+    width: 200px;
+    background-color: red; // For browsers that do not support gradients //
+    background-image: radial-gradient(circle, red, yellow, green);
+    z-index: 0;
+} */
