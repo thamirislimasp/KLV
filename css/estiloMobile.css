@@ -71,20 +71,21 @@ body {
 
 
 /* CARROSSEL MOBILE  */
-
+/* 
 * {box-sizing: border-box;}
 
 body {
   font-family: Verdana, sans-serif;
-}
+} */
 
 .mySlides {
   display: none;
 }
 
-img {
+#carrossel {
  vertical-align: middle;
  border-radius: 15px;
+ height: 150px;
 }
 
 .slideshow-container {
@@ -127,7 +128,7 @@ img {
 
 #redes a {
   position: absolute;
-  left: -60px;
+  left: -100px;
   transition: 0.3s;
   padding: 15px;
   width: 100px;
@@ -158,3 +159,21 @@ img {
   top: 400px;
   background-color: #0fec0b;
 }
+
+/* Iframe quem somos */
+
+.somos{
+  width: 75%;
+  height: 250px;
+  margin: 30px;
+  background-color: #D9D9D9;
+  border: 2px solid #0FEC0B;
+  border-radius: 10px;
+  color: #000;
+  overflow: auto;
+  padding: 8px;
+}
+
+/* ACORDEON Mobile */
+
+
