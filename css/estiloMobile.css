@@ -1,10 +1,20 @@
-/* MENU MOBILE */
-
 body {
   font-family: "Lato", sans-serif;
   transition: background-color .5s;
   background-color: #010326;
 }
+
+.gradiente {
+  position: absolute;
+  right: -40px;
+  top: -25px;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background-image: radial-gradient(rgb(96, 119, 65), rgba(35, 156, 33, 0));       
+}
+
+/* MENU MOBILE */ 
 
 .sidenav {
   height: 100%;
@@ -71,12 +81,10 @@ body {
 
 
 /* CARROSSEL MOBILE  */
+
 /* 
 * {box-sizing: border-box;}
-
-body {
-  font-family: Verdana, sans-serif;
-} */
+*/
 
 .mySlides {
   display: none;
@@ -105,7 +113,7 @@ body {
 }
 
 .active {
-  background-color: #717171;
+  background-color: #0FEC0B;
 }
 
 .fade {
@@ -128,15 +136,20 @@ body {
 
 #redes a {
   position: absolute;
-  left: -100px;
+  left: -80px;
   transition: 0.3s;
-  padding: 15px;
+  padding: 8px;
   width: 100px;
   text-decoration: none;
   font-size: 10px;
   color: #FFF;
   border-radius: 0 5px 5px 0;
   text-align: end;
+}
+
+#redes img{
+  width: 25px;
+  height: 25px;
 }
 
 #redes a:hover {
@@ -175,5 +188,86 @@ body {
 }
 
 /* ACORDEON Mobile */
+
+.acordeonMobile{
+  margin-top: 100px;
+  color: #D9D9D9;
+}
+
+
+.accordion {  
+  background-color: #010326;
+  color: #D9D9D9;
+  cursor: pointer;
+  padding: 18px;
+  width: 70%;
+  border: 1px solid #0FEC0B;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;  
+  font-weight: bold;
+}
+
+.active, .accordion:hover {
+  background-color: #0FEC0B; 
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #D9D9D9;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 9.7%;
+  display: none;
+  background-color: #010326;
+  overflow: hidden;
+  color: #D9D9D9;
+  width: 50%;
+  border: 1px solid #0FEC0B;  
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 80px;
+  height: 260px;
+  background-image: linear-gradient(to bottom, rgba(14, 235, 10, 0), rgba(14, 235, 10, 1));
+  color: #fff;
+}
+
+.menu-rodape {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.loja ul {
+  list-style: none;
+  font-size: 12px;
+  padding: 15px;
+
+}
+
+.loja {
+  margin: 10px 10px auto;
+  padding: 5px;
+}
+
+.direitos {
+  margin-top: -30px;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+}
+
 
 

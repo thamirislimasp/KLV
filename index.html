@@ -9,6 +9,9 @@
 </head>
 
 <body>
+  <!-- CIRCULO GRADIENTE -->
+
+  <div class="gradiente"></div>
 
   <!-- MENU MOBILE 320 -->
 
@@ -26,7 +29,7 @@
     <span onclick="openNav()">&#9776;</span>     
   </div>
 
-  <!-- CARROSSEL MOBILE 300 -->
+  <!-- CARROSSEL MOBILE 320 -->
 
   <div class="slideshow-container">
 
@@ -54,9 +57,15 @@
     <!-- Icones REDES SOCIAIS -->
 
     <div id="redes" class="redesSociais">
-      <a href="#" id="whatsapp">Whatsapp</a>
-      <a href="#" id="instagram">Instagram</a>
-      <a href="#" id="email">E-mail</a>
+      <a href="#" id="whatsapp">
+        <img src="imagens/MicrosoftTeams-image.png" alt="">
+      </a>
+      <a href="#" id="instagram">
+        <img src="imagens/MicrosoftTeams-image (1).png" alt="">
+      </a>
+      <a href="#" id="email">
+        <img src="imagens/Email.png" alt="">
+      </a>
     </div>
 
     <!-- IFrame Quem Somos -->
@@ -70,7 +79,68 @@
       <p>Contribuímos para um mundo mais limpo e sustentável, protegendo o planeta enquanto avançamos tecnologicamente, aqui você pode descartar seu "lixo eletrônico" e ainda ter um retorno em créditos para ser utilizado em qualquer loja do nosso grupo.</p>
     </div>
 
+
     <!-- Acordeon SERVIÇOS -->
+    
+    
+    <div class="acordeonMobile">
+      <h3>SERVIÇOS</h3>
+
+      <button class="accordion">LOCAÇÃO</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      </div>
+
+      <button class="accordion">REPAROS</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      </div>
+
+      <button class="accordion">UPGRADE</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      </div>
+
+      <button class="accordion">VENDAS</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      </div>
+
+      <button class="accordion">DESCARTE</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <div class="menu-rodape">
+          <div class="loja">
+              <ul>
+                  <li><b>KLV Reverse</b></li>
+                  <li><b>Contato:</b> (11)94370-6303</li>
+                  <li><b>Endereço:</b> Avenida Rio Branco, 316 <br>Campos Eliseos - São Paulo/SP<br>Convênio com
+                      estacionamento Wipark (Av. Rio Branco, 312)</li>
+              </ul>
+          </div>
+
+          <div class="loja">
+              <ul>
+                  <li><b>KLV Notebooks</b></li>
+                  <li><b>Contato:</b> (11)9351-1214</li>
+                  <li><b>Endereço: </b> Avenida Rio Branco, 324 <br>Campos Eliseos - São Paulo/SP<br>Convênio com
+                      estacionamento Wipark (Av. Rio Branco, 312)</li>
+              </ul>
+          </div>
+
+      </div>
+      <div class="direitos">
+          <p><b><i>© 2024 KLV.com. Todos os direitos reservados</i></b></p>
+      </div>
+
+    </footer>
+
 
     
 
@@ -114,6 +184,21 @@
   }
 
   // ACORDEON Mobile
+
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
 
 </script>
    
