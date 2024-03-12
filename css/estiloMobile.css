@@ -48,7 +48,7 @@ body {
 .sidenav .closebtn {
   position: absolute;
   top: 0;
-  right: -32px;
+  right: -10px;
   font-size: 36px;
   margin-right: 50px;
 }
@@ -136,7 +136,7 @@ body {
 
 #redes a {
   position: absolute;
-  left: -80px;
+  left: -75px;
   transition: 0.3s;
   padding: 8px;
   width: 100px;
@@ -160,17 +160,17 @@ body {
 
 #whatsapp {
   top: 300px;
-  background-color: #0fec0b;
+  background-color: #0a5e09;
 }
 
 #instagram {
   top: 350px;
-  background-color: #0FEC0B;
+  background-color: #0a5e09;
 }
 
 #email {
   top: 400px;
-  background-color: #0fec0b;
+  background-color: #0a5e09;
 }
 
 /* Iframe quem somos */
@@ -187,24 +187,26 @@ body {
   padding: 8px;
 }
 
-/* ACORDEON Mobile */
+/* ACORDEON SERVIÇOS Mobile */
 
-.acordeonMobile{
-  margin-top: 100px;
+#titulo{
+  text-align: center;
+  margin-top: 70px;
   color: #D9D9D9;
 }
 
 
-.accordion {  
+.accordion { 
+  margin-left: 15%; 
   background-color: #010326;
   color: #D9D9D9;
   cursor: pointer;
-  padding: 18px;
-  width: 70%;
+  padding: 18px;  
+  width: 220px;
   border: 1px solid #0FEC0B;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 13px;
   transition: 0.4s;  
   font-weight: bold;
 }
@@ -231,9 +233,94 @@ body {
   background-color: #010326;
   overflow: hidden;
   color: #D9D9D9;
-  width: 50%;
+  width: 152px;
   border: 1px solid #0FEC0B;  
+
 }
+
+/* MODAL */
+
+
+.myBtn{
+  margin-top: 50px;
+}
+
+
+/* Fundo do Modal */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #010326;
+  margin: 5%;
+  padding: 20px;
+  border: 1px solid #0FEC0B;
+  width: 70%;
+  border-radius: 20px;
+}
+
+/* The Close Button */
+.close {
+  color: #0FEC0B;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#imagensModal{
+  width: 70px;
+  height: 50px; 
+}
+
+.modalTexto{
+  margin: 15px 5px;
+  height: 200px;
+  background-color: #D9D9D9;
+  border: 2px solid #0FEC0B;
+  border-radius: 10px;
+  color: #000;
+  overflow: auto;
+  padding: 8px;
+}
+
+/* Beneficios */
+
+.cardsBene{
+  display: flex;
+  align-items: center;
+}
+
+.beneficios{
+  margin: 100px 10px;
+  width: 200px;
+  height: 300px;
+  background-color: #D9D9D9;
+  border: 2px solid #0FEC0B;
+  border-radius: 10px;
+  color: #000;
+  overflow: auto;
+  padding: 8px;
+}
+
 
 /* FOOTER */
 
