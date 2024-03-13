@@ -228,21 +228,21 @@ body {
 }
 
 .panel {
-  padding: 0 9.7%;
+  margin-left: 15%; 
+  padding: 0 11%;
   display: none;
   background-color: #010326;
   overflow: hidden;
   color: #D9D9D9;
   width: 152px;
-  border: 1px solid #0FEC0B;  
-
+  border: 1px solid #0FEC0B; 
 }
 
 /* MODAL */
 
 
-.myBtn{
-  margin-top: 50px;
+#myBtn{
+  margin: 100px 100px;
 }
 
 
@@ -292,8 +292,8 @@ body {
 }
 
 .modalTexto{
-  margin: 15px 5px;
-  height: 200px;
+  margin: 10px 5px;
+  height: 150px;
   background-color: #D9D9D9;
   border: 2px solid #0FEC0B;
   border-radius: 10px;
