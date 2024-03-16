@@ -1,3 +1,6 @@
+@charset "utf-8";
+
+
 body {
   font-family: "Lato", sans-serif;
   transition: background-color .5s;
@@ -29,6 +32,7 @@ body {
   transition: 0.5s;
   padding-top: 60px;
   border-left: solid 3px #D9D9D9;
+  background-image: linear-gradient(to bottom, rgba(14, 235, 10, 0) 50%, rgba(14, 235, 10, 1));
 }
 
 .sidenav a {
@@ -94,9 +98,13 @@ body {
 }
 
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 100%;
   position: relative;
   margin: auto 30px;
+}
+
+.slideshow-container img{
+  width: 100%;
 }
 
 .dot {
@@ -182,6 +190,11 @@ body {
   color: #000;
   overflow: auto;
   padding: 8px;
+  font-size: 14px;
+}
+
+.somos h4{
+  font-size: 16px;
 }
 
 /* ACORDEON SERVIÇOS Mobile */
@@ -210,6 +223,7 @@ body {
 
 .active, .accordion:hover {
   background-color: #0FEC0B; 
+  color: #010326;
 }
 
 .accordion:after {
@@ -225,6 +239,7 @@ body {
 }
 
 .panel {
+  font-size: 13px;
   margin-left: 15%; 
   padding: 0 11%;
   display: none;
@@ -245,6 +260,7 @@ body {
 
 /* Fundo do Modal */
 .modal {
+  display: none;
   position: fixed; 
   z-index: 1; 
   padding-top: 100px; 
@@ -252,7 +268,7 @@ body {
   top: 0;
   width: 100%; 
   height: 100%; 
-  overflow: auto; 
+  overflow: hidden; 
   background-color: rgb(0,0,0); 
   background-color: rgba(0,0,0,0.4); 
 }
@@ -267,6 +283,7 @@ body {
   border: 1px solid #0FEC0B;
   width: 70%;
   border-radius: 20px;
+  overflow: hidden;
 }
 
 /* Botão de fechar */
@@ -314,15 +331,19 @@ body {
 .beneficios{
   margin: 100px 10px;
   width: 200px;
-  height: 300px;
+  height: 200px;
   background-color: #D9D9D9;
   border: 2px solid #0FEC0B;
   border-radius: 10px;
   color: #000;
   overflow: auto;
   padding: 8px;
+  font-size: 12px;
 }
 
+.beneficios h4{
+  font-size: 14px;
+}
 
 /* FOOTER */
 
