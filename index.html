@@ -17,11 +17,11 @@
   <header>
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#">Quem somos</a>
-      <a href="#">Serviços</a>
-      <a href="#">Equipamentos</a>
-      <a href="#">Benefícios</a>
-      <a href="#">Contato</a>
+      <a href="#quemSomos" onclick="closeNav()">Quem somos</a>
+      <a href="#servicos" onclick="closeNav()">Serviços</a>
+      <a href="#equipamentos" onclick="closeNav()">Equipamentos</a>
+      <a href="#beneficios" onclick="closeNav()">Benefícios</a>
+      <a href="#contato" onclick="closeNav()">Contato</a>
     </div>
 
     <div id="main">
@@ -49,7 +49,7 @@
     </div>
     <br>
     
-    <div style="text-align:center">
+    <div class="dots" style="text-align:center">
       <span class="dot"></span> 
       <span class="dot"></span> 
       <span class="dot"></span> 
@@ -70,7 +70,7 @@
     </div>
 
     <!-- IFRAME Quem Somos -->
-
+    <a id="quemSomos"></a>
     <div class="somos">
       <h4>QUEM SOMOS</h4>
       
@@ -89,7 +89,7 @@
 
     <!-- ACORDEON SERVIÇOS -->
     
-    
+      <a id="servicos"></a>    
       <h3 id="titulo">SERVIÇOS</h3>
 
       <div class="acordeon">
@@ -120,7 +120,7 @@
       </div>
 
     <!-- CARROSSEL -->
-
+    <a id="equipamentos"></a>
 
 
     <!-- MODAL -->
@@ -152,7 +152,7 @@
 
 
     <!-- BENEFICIOS -->
-
+    <a id="beneficios"></a>
     <div class= "cardsBene">
       <div class="beneficios">
         <h4>BENEFICIOS</h4>
@@ -187,28 +187,32 @@
     <!-- FOOTER -->
 
     <footer>
-      <div class="menu-rodape">
-          <div class="loja">
-              <ul>
-                  <li><b>KLV Reverse</b></li>
-                  <li><b>Contato:</b> (11)94370-6303</li>
-                  <li><b>Endereço:</b> Avenida Rio Branco, 316 <br>Campos Eliseos - São Paulo/SP<br>Convênio com
-                      estacionamento Wipark (Av. Rio Branco, 312)</li>
-              </ul>
-          </div>
+      <a id="contato"></a>
+      
+      <div id="foot">
+        <div class="menu-rodape">
+            <div class="loja">
+                <ul>
+                    <li><b>KLV Reverse</b></li>
+                    <li><b>Contato:</b> (11)94370-6303</li>
+                    <li><b>Endereço:</b> Avenida Rio Branco, 316 <br>Campos Eliseos - São Paulo/SP<br>Convênio com
+                        estacionamento Wipark (Av. Rio Branco, 312)</li>
+                </ul>
+            </div>
 
-          <div class="loja">
-              <ul>
-                  <li><b>KLV Notebooks</b></li>
-                  <li><b>Contato:</b> (11)9351-1214</li>
-                  <li><b>Endereço: </b> Avenida Rio Branco, 324 <br>Campos Eliseos - São Paulo/SP<br>Convênio com
-                      estacionamento Wipark (Av. Rio Branco, 312)</li>
-              </ul>
-          </div>
+            <div class="loja">
+                <ul>
+                    <li><b>KLV Notebooks</b></li>
+                    <li><b>Contato:</b> (11)9351-1214</li>
+                    <li><b>Endereço: </b> Avenida Rio Branco, 324 <br>Campos Eliseos - São Paulo/SP<br>Convênio com
+                        estacionamento Wipark (Av. Rio Branco, 312)</li>
+                </ul>
+            </div>
 
-      </div>
-      <div class="direitos">
-          <p><b><i>© 2024 KLV.com. Todos os direitos reservados</i></b></p>
+        </div>
+        <div class="direitos">
+            <p><b><i>© 2024 KLV.com. Todos os direitos reservados</i></b></p>
+        </div>
       </div>
 
     </footer>
@@ -232,6 +236,8 @@
     document.getElementById("main").style.marginRight= "0";
     document.body.style.backgroundColor = "#010326";
     document.getElementById("openNav").style.zIndex = 2;
+
+
   }
 
   // CARROSSEL MOBILE

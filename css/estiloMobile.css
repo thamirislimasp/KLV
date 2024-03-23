@@ -6,12 +6,13 @@ body {
   transition: background-color .5s;
   background-color: #010326;
   box-sizing: border-box;
+  margin: 0;
 }
 
 .gradiente {
   position: absolute;
   z-index: 1;
-  right: -10%;
+  right: -5%;
   top: -5%;
   height: 120px;
   width: 120px;
@@ -62,10 +63,11 @@ body {
   margin-right: 50px; 
 }
 
+
 #main {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   transition: margin-right .5s;
   background-color:#010326;
   color: #D9D9D9;
@@ -76,6 +78,7 @@ body {
 #main img {
   min-width: 50%;
   width: 50%;
+  margin-left: 5%;
 }
 
 #main span{
@@ -143,9 +146,14 @@ body {
 
 /* REDES SOCIAIS */
 
+.redesSociais {
+  position: fixed;
+  top: 10px;
+}
+
 #redes a {
   position: absolute;
-  left: -70px;
+  left: -75px;
   transition: 0.3s;
   padding: 8px;
   width: 100px;
@@ -185,9 +193,9 @@ body {
 /* Iframe quem somos */
 
 .somos{
+  margin: 50px auto;
   width: 75%;
   height: 250px;
-  margin: 30px;
   background-color: #D9D9D9;
   border: 2px solid #0FEC0B;
   border-radius: 10px;
@@ -209,14 +217,20 @@ body {
   color: #D9D9D9;
 }
 
+.acordeon {
+  margin: 0 10%;
+}
 
-.accordion { 
-  margin-left: 15%; 
+.accordion, .panel {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 18px;
+}
+
+.accordion {
   background-color: #010326;
   color: #D9D9D9;
   cursor: pointer;
-  padding: 18px;  
-  width: 220px;
   border: 1px solid #0FEC0B;
   text-align: left;
   outline: none;
@@ -244,13 +258,10 @@ body {
 
 .panel {
   font-size: 13px;
-  margin-left: 15%; 
-  padding: 0 11%;
   display: none;
   background-color: #010326;
   overflow: hidden;
   color: #D9D9D9;
-  width: 152px;
   border: 1px solid #0FEC0B; 
 }
 
@@ -330,11 +341,14 @@ body {
 .cardsBene{
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 0 5%;
 }
 
 .beneficios{
   margin: 100px 10px;
-  width: 200px;
+  width: 50%;
   height: 200px;
   background-color: #D9D9D9;
   border: 2px solid #0FEC0B;
@@ -358,11 +372,11 @@ footer {
   color: #fff;
 }
 
+
 .menu-rodape {
   display: flex;
   justify-content: space-evenly;
 }
-
 
 .loja ul {
   list-style: none;
