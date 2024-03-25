@@ -6,7 +6,7 @@ body {
   transition: background-color .5s;
   background-color: #010326;
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 !important;
 }
 
 .gradiente {
@@ -148,12 +148,12 @@ body {
 
 .redesSociais {
   position: fixed;
-  top: 10px;
+  top: -50px;
 }
 
 #redes a {
   position: absolute;
-  left: -75px;
+  left: -80px;
   transition: 0.3s;
   padding: 8px;
   width: 100px;
@@ -165,12 +165,12 @@ body {
 }
 
 #redes img{
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
 }
 
 #redes a:hover {
-  left: 0;
+  left: -60px;
   background-color: #0ebb0b;
 
 }
@@ -181,12 +181,12 @@ body {
 }
 
 #instagram {
-  top: 350px;
+  top: 342px;
   background-color: #0a5e09;
 }
 
 #email {
-  top: 400px;
+  top: 384px;
   background-color: #0a5e09;
 }
 
@@ -194,7 +194,7 @@ body {
 
 .somos{
   margin: 50px auto;
-  width: 75%;
+  width: 65%;
   height: 250px;
   background-color: #D9D9D9;
   border: 2px solid #0FEC0B;
@@ -218,7 +218,7 @@ body {
 }
 
 .acordeon {
-  margin: 0 10%;
+  margin: 0 15%;
 }
 
 .accordion, .panel {
@@ -342,12 +342,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 90%;
-  margin: 0 5%;
+  width: 80%;
+  margin: 0 10%;
 }
 
+
 .beneficios{
-  margin: 100px 10px;
+  margin: 100px 5px;
   width: 50%;
   height: 200px;
   background-color: #D9D9D9;
@@ -366,16 +367,19 @@ body {
 /* FOOTER */
 
 footer {
-  margin-top: 80px;
-  height: 260px;
-  background-image: linear-gradient(to bottom, rgba(14, 235, 10, 0), rgba(14, 235, 10, 1));
+  margin-top: 70px;
+  height: 20%;
   color: #fff;
 }
 
+#foot {
+  background-image: linear-gradient(to bottom, rgba(14, 235, 10, 0), rgba(14, 235, 10, 1));
+  width: 100%;
+}
 
 .menu-rodape {
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
 }
 
 .loja ul {
@@ -386,7 +390,7 @@ footer {
 }
 
 .loja {
-  margin: 10px 10px auto;
+  margin: 10px 10px;
   padding: 5px;
 }
 
