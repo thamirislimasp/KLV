@@ -1,37 +1,45 @@
 @charset "utf-8";
-
+*{
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: "Lato", sans-serif;
   transition: background-color .5s;
-  background-color: #010326;
+  background-color: #010326;  
   box-sizing: border-box;
-  margin: 0 !important;
+
 }
 
-.gradiente {
+/* .gradiente {
   position: absolute;
-  z-index: 1;
-  right: -5%;
-  top: -5%;
+  z-index: 0;
+  right: -25px;
+  top: -25px;
+  overflow: hidden;
   height: 120px;
   width: 120px;
   border-radius: 100%;
   background-image: radial-gradient(rgb(96, 119, 65), rgba(35, 156, 33, 0));       
-}
+} */
 
-/* MENU MOBILE */ 
+
+ 
+@media screen and (min-width: 320px) {
+
+/* MENU MOBILE */
 #openNav{
-  z-index: 2;
+  z-index: 1;
 }
 
 .sidenav {
   height: 100%;
-  width: 0;
+  width: 0;  
   position: fixed;
-  z-index: 1;
+  z-index: 1000;
   top: 0;
-  right: 0;
+  right: -3px;
   background-color: #010326;
   overflow-x: hidden;
   transition: 0.5s;
@@ -58,7 +66,7 @@ body {
 .sidenav .closebtn {
   position: absolute;
   top: 0;
-  right: -10px;
+  right: -25px;
   font-size: 36px;
   margin-right: 50px; 
 }
@@ -85,11 +93,6 @@ body {
   padding: 30px;
 }
 
-
-/* @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-} */
 
 
 /* CARROSSEL MOBILE  */
@@ -137,11 +140,6 @@ body {
   from {opacity: .4} 
   to {opacity: 1}
 }
-
-/* On smaller screens, decrease text size */
-/* @media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-} */
 
 
 /* REDES SOCIAIS */
@@ -201,12 +199,13 @@ body {
   border-radius: 10px;
   color: #000;
   overflow: auto;
-  padding: 8px;
+  padding: 15px;
   font-size: 14px;
 }
 
 .somos h4{
   font-size: 16px;
+  padding: 15px 0;
 }
 
 /* ACORDEON SERVIÇOS Mobile */
@@ -215,6 +214,7 @@ body {
   text-align: center;
   margin-top: 70px;
   color: #D9D9D9;
+  padding: 20px;
 }
 
 .acordeon {
@@ -342,8 +342,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80%;
-  margin: 0 10%;
+  width: 85%;
+  margin: 0 5%;
+  padding: 10px;
 }
 
 
@@ -362,6 +363,7 @@ body {
 
 .beneficios h4{
   font-size: 14px;
+  padding: 10px 0;
 }
 
 /* FOOTER */
@@ -374,7 +376,7 @@ footer {
 
 #foot {
   background-image: linear-gradient(to bottom, rgba(14, 235, 10, 0), rgba(14, 235, 10, 1));
-  width: 100%;
+  padding-bottom: 15px;
 }
 
 .menu-rodape {
@@ -395,11 +397,12 @@ footer {
 }
 
 .direitos {
-  margin-top: -30px;
+  margin-top: 15px;
   color: #fff;
   text-align: center;
   font-size: 12px;
 }
 
-
+  
+}
 
