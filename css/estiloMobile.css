@@ -17,7 +17,7 @@ body {
   z-index: 0;
   right: -25px;
   top: -25px;
-  overflow: hidden;
+  overflow: auto;
   height: 120px;
   width: 120px;
   border-radius: 100%;
@@ -107,13 +107,13 @@ body {
  height: 50%;
 }
 
-.slideshow-container {
+.slideshow-container1 {
   max-width: 100%;
   position: relative;
   margin: auto 30px;
 }
 
-.slideshow-container img{
+.slideshow-container1 img{
   width: 100%;  
 }
 
@@ -265,12 +265,60 @@ body {
   border: 1px solid #0FEC0B; 
 }
 
-/* MODAL */
+/* CARROSSEL DE CARDS */
 
-
-#myBtn{
-  margin: 100px 100px;
+#tituloEquip {
+  text-align: center;
+  margin-top: 50%;
+  color: #D9D9D9;
+  /* padding: 20px; */
 }
+
+.container {
+  background-color: #010326;
+  /* padding: 10px;   */
+}
+
+.slideshow-container::-webkit-scrollbar {
+  display: none;
+}
+
+.slideshow-container {
+  margin: 15% 12%;
+  display: flex;  
+  overflow: auto;
+  height: 230px;
+}
+
+.cardCarrossel {
+  padding: 5px;
+  border: 2px solid #0FEC0B;
+  border-radius: 20px;
+  background-color: #010326;
+  margin: 1.5%;
+}
+
+.cardCarrossel img {
+    border-radius: 10px;
+    width: 100px;
+    margin: 10px;
+}
+
+.cardCarrossel p {
+    color: #0FEC0B;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    
+  padding-top: 50px;
+}
+ 
+.cardCarrossel:hover {
+    text-decoration: underline #0FEC0B;
+    background-image: linear-gradient(to top, rgba(14, 235, 10, 0) 15%, rgba(14, 235, 10, 1));
+}
+
+
+/* MODAL */
 
 
 /* Fundo do Modal */
