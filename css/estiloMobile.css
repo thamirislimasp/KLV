@@ -93,6 +93,19 @@ body {
   padding: 30px;
 }
 
+/* TOPO */
+.topo-btn {
+  position: relative;
+  z-index: 3;
+  left: 85%;
+  bottom: 5%;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: fixed;
+  background-color: #0FEC0B;
+}
+
 
 
 /* CARROSSEL MOBILE  */
