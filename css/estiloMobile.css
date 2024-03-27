@@ -28,6 +28,71 @@ body {
  
 @media screen and (min-width: 320px) {
 
+/* MODAL ABERTURA */
+
+button #enviar{
+  background-color: rgba(15, 236, 11 , 0.5);
+  color: #010326;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.input{
+  display: block;
+  /* background-color: rgba(1, 3, 38 ,0.2); */
+  border: solid 1px #0FEC0B;
+  border-radius: 5px;
+  margin: 5px 5px;
+}
+
+  /* Estilo para cobrir a tela inteira */
+  .modalInicial {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 9999;
+      color: white;
+      border: solid 1px #0FEC0B;
+      overflow: hidden;
+  }
+
+  #logo-form{
+    width: 65%;
+  }
+
+  #logo-formulario{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+
+  }
+
+  /* Estilo para centralizar o conteúdo */
+  .modal-conteudo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #010326;
+      padding: 20px;
+      border-radius: 5px;
+      border: solid 1px #0FEC0B;
+  }
+
+  /* Estilo para o botão de fechar */
+  .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+  }
+
+
+
 /* MENU MOBILE */
 #openNav{
   z-index: 1;
@@ -117,23 +182,22 @@ body {
 #carrossel {
  vertical-align: middle;
  border-radius: 15px;
- height: 50%;
 }
 
 .slideshow-container1 {
   max-width: 100%;
   position: relative;
-  margin: auto 30px;
+  margin: 10px 30px;
 }
 
 .slideshow-container1 img{
-  width: 100%;  
+  width: 100%;
 }
 
 .dot {
   height: 8px;
   width: 8px;
-  margin: 0 1px;
+  margin: 10px 1px;
   background-color: #D9D9D9;
   border-radius: 50%;
   display: inline-block;
@@ -297,7 +361,7 @@ body {
 }
 
 .slideshow-container {
-  margin: 15% 12%;
+  margin: 15% 10%;
   display: flex;  
   overflow: auto;
   height: 230px;
@@ -325,9 +389,10 @@ body {
   padding-top: 50px;
 }
  
-.cardCarrossel:hover {
+.cardCarrossel:hover, .cardCarrossel:focus {
     text-decoration: underline #0FEC0B;
     background-image: linear-gradient(to top, rgba(14, 235, 10, 0) 15%, rgba(14, 235, 10, 1));
+    cursor: pointer;
 }
 
 

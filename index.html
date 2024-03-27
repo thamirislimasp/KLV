@@ -13,6 +13,34 @@
 
     <a id="topo"></a>
 
+    <!-- MODAL ABERTURA -->
+
+    <div id="meuModal" class="modalInicial">
+      <div class="modal-conteudo">
+          <span class="close" onclick="fecharModal()">&times;</span>
+          <h4>Cadastre-se e ganhe 5% de desconto na primeira compra !</h4>
+          <form>
+           
+           
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" class="input" required>
+       
+            <label for="email">Email:</label>
+            <input type="text" id="email1" name="email" class="input" required>
+       
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" class="input" required>
+       
+            <label for="mensagem">Mensagem:</label>
+            <input type="text" id="mensagem" name="mensagem" class="input" required>
+       
+            <button id="enviar">Enviar</button>
+   
+            <div id="logo-formulario"> <img src="logo klv.gif" id="logo-form"></div>
+          </form>
+      </div>
+    </div>
+
     <!-- CIRCULO GRADIENTE -->
 
     <div class="gradiente"></div>
@@ -39,43 +67,45 @@
     <a href="#topo"><button class="topo-btn"></button></a>
 
     <!-- CARROSSEL MOBILE 320 -->
-    
-    <div class="slideshow-container1">
+    <section>
+      <div class="slideshow-container1">
 
-      <div class="mySlides fade">
-        <img id="carrossel" src="imagens/carrosel.webp">
+        <div class="mySlides fade">
+          <img id="carrossel" src="imagens/carrosel.webp">
+        </div>
+        
+        <div class="mySlides fade">
+          <img id="carrossel" src="imagens/03.03 - Assistencia Tecnica KLV.png">
+        </div>
+        
+        <div class="mySlides fade">  
+          <img id="carrossel" src="imagens/klv-reverse-loja-de-informatica-3.jpeg">
+        </div>
+
+        <div class="dots" style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
       </div>
+    </section>
       
-      <div class="mySlides fade">
-        <img id="carrossel" src="imagens/03.03 - Assistencia Tecnica KLV.png">
-      </div>
-      
-      <div class="mySlides fade">  
-        <img id="carrossel" src="imagens/klv-reverse-loja-de-informatica-3.jpeg">
-      </div>
-      
-      </div>
-      <br>
-      
-      <div class="dots" style="text-align:center">
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-      </div>
+    
 
       <!-- Icones REDES SOCIAIS -->
 
-      <div id="redes" class="redesSociais">
-        <a href="#" id="whatsapp">
-          <img src="imagens/MicrosoftTeams-image.png" alt="">
-        </a>
-        <a href="#" id="instagram">
-          <img src="imagens/MicrosoftTeams-image (1).png" alt="">
-        </a>
-        <a href="#" id="email">
-          <img src="imagens/Email.png" alt="">
-        </a>
-      </div>
+    <div id="redes" class="redesSociais">
+      <a href="#" id="whatsapp">
+        <img src="imagens/MicrosoftTeams-image.png" alt="">
+      </a>
+      <a href="#" id="instagram">
+        <img src="imagens/MicrosoftTeams-image (1).png" alt="">
+      </a>
+      <a href="#" id="email">
+        <img src="imagens/Email.png" alt="">
+      </a>
+    </div>
 
       <!-- IFRAME Quem Somos -->
 
@@ -373,6 +403,19 @@
 
 
 <script>
+
+  // MODAL ABERTURA
+
+  // Função para abrir o modal automaticamente quando a página é carregada
+  window.onload = function() {
+    document.getElementById('meuModal').style.display = 'block';
+  }
+ 
+  // Função para fechar o modal
+  function fecharModal() {
+      document.getElementById('meuModal').style.display = 'none';
+  }
+
   // MENU MOBILE
 
   function openNav(element) {
