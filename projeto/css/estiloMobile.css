@@ -685,6 +685,7 @@ footer {
         align-items: center;
         font-size: 15px;
     }
+
     
     .botao {
         background-color: #4A6D1D;
@@ -693,7 +694,6 @@ footer {
         border-radius: 20px;
         font-family: 'Franklin Gothic Medium';
         color: white;
-    
     }
     
     .botao:hover {
@@ -721,10 +721,9 @@ footer {
 
     /* Estilo*/
     .tab {
-      overflow: hidden;
+      /* overflow: hidden; */
       border: 2px solid #0FEC0B;
       background-color: #010326;
-
     }
     
     /* Botões tab */
@@ -890,17 +889,14 @@ footer {
 
   /* MENU */
 
-  .menu a {
-   width: 30%;   
-  }
+  .menu #logo {
+   width: 100%;   
+  } 
 
-  .menu ul {
-    margin: 10px 50px;
-  }
 
   .botao {
-    width: 120px;
-    margin: 20px;
+    width: 110px;
+    margin: 5px;
     text-align: center;
   }
 
