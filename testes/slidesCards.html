@@ -9,19 +9,24 @@
 
 /* Slideshow container */
 
-.container {
-  width: 100%;
+.carrosselDesktop {
+  width: 80%;
   background-color: aquamarine;
   padding: 10px;  
+  margin: auto;
 }
 
-.slideshow-container {
-  display: flex;  
+.slides {
+  display: flex; 
+  flex-direction: row;
   overflow: auto;
 }
 
+.slides::-webkit-scrollbar {
+  display: none;
+}
+
 .cardCarrossel {
-  width: 150px;
   padding: 5px;
   border: 2px solid #0FEC0B;
   border-radius: 20px;
@@ -46,12 +51,12 @@
     background-image: linear-gradient(to top, rgba(14, 235, 10, 0) 15%, rgba(14, 235, 10, 1));
 }
 
-/* 
+
 /* Next & previous buttons */
-/* .prev, .next {
+.prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 10%;
   width: 20px;
   padding: 16px;
   margin-top: -22px;
@@ -61,19 +66,19 @@
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-} */
+}
 
 /* Position the "next button" to the right */
-/* .next {
+.next {
   right: 0;
   border-radius: 3px 0 0 3px;
-} */
+}
 
 /* On hover, add a grey background color */
-/*.prev:hover, .next:hover {7-
+.prev:hover, .next:hover {
   background-color: #f1f1f1;
   color: black;
-} */
+} 
 </style>
 </head>
 <body>
@@ -81,8 +86,8 @@
 <!-- <h2 style="text-align:center">Multiple Slideshows</h2>
 
 <p>Slideshow 1:</p> -->
-<div class="container">
-  <div class="slideshow-container">
+<section class="carrosselDesktop">
+  <div class="slides">
     <div class="cardCarrossel">
       <img src="Notebook-Lenovo-Ultrafino-Ideapad-centimentros.png">
       <p>NOTEBOOKS</p>
@@ -107,33 +112,66 @@
       <img src="Notebook-Lenovo-Ultrafino-Ideapad-centimentros.png">
       <p>TOTEM</p>
     </div>
-
-    <!-- <a class="prev" onclick="plusSlides(-1, 0, 1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1, 0, -1)">&#10095;</a> -->
   </div>
-</div>
+  <a class="prev">&#10094;</a>
+  <a class="next">&#10095;</a>
+</section>
+
 
 
 <script>
+var prev = document.getElementsByClassName("slides");
+var next = document.getElementsByClassName("next");
+
+prev.addEventListener("scrollLeft")
+
+// prev.onclick = function() {
+//     prev.scroll(-1);
+// }
+
+// next.scroll = function() {
+//     next.scrollleft;
+// }
+// const scrollDemo = document.querySelector("#scrollDemo");
+// const output = document.querySelector(".output");
+
+        // prev.addEventListener("scroll", event => {
+            // output.innerHTML = `scrollTop: ${scrollDemo.scrollTop} <br>
+            //                     scrollLeft: ${scrollDemo.scrollLeft} `;
+        // }, { passive: true });
+
 
 
 // let slideIndex = 1;
-// let slideId = ["cardCarrossel"]
 // showSlides(slideIndex);
 
+// // Next/previous controls
 // function plusSlides(n) {
 //   showSlides(slideIndex += n);
+//   window.scrollTo(-1, 1)
+// }
+
+// // Thumbnail image controls
+// function currentSlide(n) {
+//   showSlides(slideIndex = n);
 // }
 
 // function showSlides(n) {
 //   let i;
-//   let x = document.getElementsByClassName(slideId);
-//   if (n > x.length) {slideIndex = 1}    
-//   if (n < 1) {slideIndex = x.length}
-//   for (i = 0; i < x.length; i++) {
-//      x[i].style.display = "none";  
+//   let slides = document.getElementsByClassName("carrosselDesktop");
+//   let dots = document.getElementsByClassName("dot");
+
+//   if (n > slides.length) {slideIndex = 1}
+//   if (n < 1) {slideIndex = slides.length}
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].scrollLeft;
 //   }
-//   x[slideIndex-1].style.display = "block";  
+//   for (i = 0; i < dots.length; i++) {
+//     dots[i].className = dots[i].className.replace(" active", "");
+//   }
+//   slides[slideIndex-1].style.display = "block";
+
+//   dots[slideIndex-1].className += " active";
 // }
 </script>
 
