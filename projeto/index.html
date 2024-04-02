@@ -8,11 +8,7 @@
 
   <link rel="stylesheet" href="css/estiloMobile.css">  
 
-  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
- 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">  
 
 </head>
 
@@ -77,7 +73,8 @@
     </section>
 
     <!-- MENU GRANDE -->
-    <section id="menuDesktop">
+    
+    <section id="menuDesktop" class="container">
       <nav class="menu">
           <a href="#"><img id="logo" src="imagens/logo/logo klv.gif"></a>
           <ul>
@@ -95,7 +92,7 @@
 
   </header>
 
-  <main>
+  <main class="container-main">
 
     <!-- BOTÃO VOLTAR AO TOPO -->
     
@@ -237,28 +234,23 @@
         </div>
             
         <div id="locacao" class="tabcontent">
-          <h3>Locação</h3>
           <p >Com a locação de computadores permite que você tenha acesso a equipamentos de última geração, sem precisar se preocupar com a depreciação. Além disso, o suporte técnico oferecido por uma empresa de locação pode ajudar a resolver problemas rapidamente, evitando interrupções no trabalho.</p>
         </div>
             
         <div id="reparos" class="tabcontent">
-          <h3>Reparos</h3>
           <p>Realizamos reparos como limpeza, atualizações e otimizações para manter o computador funcionando corretamente. </p>
         </div>
             
         <div id="upgrade" class="tabcontent">
-          <h3>Upgrade</h3>
           <p>Melhoramos a velocidade e desempenho de seus equipamentos, podendo usar as peças trocadas para pagar parte do custo. </p>
         </div>
             
         <div id="vendas" class="tabcontent">
-          <h3>Vendas</h3>
-          <p>Compramos seus equipamentos que não estão mais em uso. </p>
+          <p>Na KLV Reverse, somos especialistas em oferecer soluções completas para suas necessidades de informática. Desde notebooks a PCs completos e equipamentos para jogos, como os poderosos PCs gamers, nós temos tudo o que você precisa para potencializar sua experiência digital. Além disso, disponibilizamos uma ampla gama de acessórios para complementar seu setup, garantindo que você esteja equipado com o melhor em tecnologia. Conte conosco para fornecer produtos de qualidade e um serviço excepcional, adaptado às suas demandas específicas. Seja para uso pessoal, profissional ou para mergulhar no mundo dos jogos, na KLV Reverse, estamos aqui para ajudar você a encontrar as melhores soluções em informática.</p>
         </div>
             
         <div id="descarte" class="tabcontent">
-          <h3>Descarte</h3>
-          <p>Traga os equipamentos que não estão mais sendo usado e realizamos o descarte correntemente sem prejudicar a natureza.</p>
+          <p>Na KLV Reverse, temos o compromisso de não apenas fornecer soluções de informática de alta qualidade, mas também de cuidar do meio ambiente. Nosso foco está no descarte responsável, reciclagem e reaproveitamento de eletrônicos. Com isso, não só ajudamos a preservar o planeta, mas também oferecemos aos nossos clientes uma oportunidade única. Ao trazer seus eletrônicos antigos para nós, não apenas os descartamos de forma ecologicamente correta, mas também oferecemos um cash back exclusivo para ser usado em nossa loja. Assim, você pode atualizar seus equipamentos tecnológicos enquanto contribui para um mundo mais sustentável. Na KLV Reverse, estamos comprometidos com você e com o meio ambiente.</p>
         </div>
       </div>
 
@@ -321,99 +313,7 @@
 
 
 
-    <!-- CARROSSEL DESKTOP -->
-
-    <a id="equipamentos"></a>
-    <br>
-
-    <section id="carrosselDesktop">
-            
-        <div class="swiper mySwiper container">
-          <div class="swiper-wrapper content">
-            
-            
-            <div class="swiper-slide card">
-              <div class="card-content" id="myBtn">
-
-                <div class="image">
-                  <img src="imagens/segundo-carrossel/notebook/dell 03.gif" alt="">
-                </div>     
-     
-                <div class="name-profession">
-                  <span class="name">Notebook</span>
-                </div>  
-              </div>
-            </div>
-
-            <div class="swiper-slide card" id="myBtn2">
-              <div class="card-content">
-
-                <div class="image">
-                  <img src="imagens/segundo-carrossel/desktop/gabinete.lado1.gif" alt="">
-                </div>                 
-     
-                <div class="name-profession">
-                  <span class="name">Desktop</span>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="swiper-slide card" id="myBtn3">
-              <div class="card-content">
-
-                <div class="image">
-                  <img src="imagens/segundo-carrossel/apple/mac air.gif" alt="">
-                </div>  
-                     
-                <div class="name-profession">
-                  <span class="name">Apple</span>
-                </div>
-                              
-              </div>
-            </div>
-
-            <div class="swiper-slide card" id="myBtn4">
-              <div class="card-content">
-
-                <div class="image">
-                  <img src="imagens/segundo-carrossel/acessorios/Monitor.gif" alt="">
-                </div>   
-              
-                <div class="name-profession">
-                  <span class="name">Acessórios</span>
-                </div>
-               
-              </div>
-            </div>
-
-            <div class="swiper-slide card" id="myBtn5">
-              <div class="card-content">
-
-                <div class="image">
-                  <img src="imagens/segundo-carrossel/totem/totem04.gif" alt="">
-                </div>
-     
-                <div class="name-profession">
-                  <span class="name">Totem</span>
-                </div>
-     
-                
-              </div>
-            </div>
-     
-          </div>
-        </div>
-     
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
-        
-    </section>
-
-
-
-    <!-- MODAL -->
+        <!-- MODAL -->
 
     
     <nav id="myModal" class="modal">
@@ -426,7 +326,7 @@
                 <img src="imagens/segundo-carrossel/notebook/dell 03.gif" alt="" id="imagensNote">
             </div>
 
-            <h4 id="titulos">Notebooks</h4>
+            <h4 id="titulo-modal">Notebooks</h4>
             <div class="modalTexto">                
                 <p>
                     Na KLV, temos uma ampla variedade de notebooks disponíveis para atender às necessidades de todos os tipos de usuários. Desde configurações básicas até modelos de alta performance, nossa linha de produtos oferece opções para cada preferência e orçamento. Seja você um estudante que precisa de um dispositivo para suas tarefas escolares, um profissional em busca de produtividade no trabalho ou um entusiasta de tecnologia que busca desempenho extremo, nós temos o notebook ideal para você. Confira nossa seleção e encontre o dispositivo perfeito para suas necessidades na KLV.
@@ -446,7 +346,7 @@
                   <img src="imagens/segundo-carrossel/desktop/gabinete.lado.gif" alt="" id="imagensDesk">
               </div>
               
-              <h4 id="titulos">Desktop</h4>
+              <h4 id="titulo-modal">Desktop</h4>
               <div class="modalTexto">                  
                   <p>
                       Introduzindo a linha de desktops da KLV Reverse, uma coleção abrangente que foi meticulosamente
@@ -483,7 +383,7 @@
                   <img src="imagens/segundo-carrossel/acessorios/Teclado.gif" alt="" id="imagensAces">
               </div>
 
-              <h4 id="titulos">Acessórios</h4>
+              <h4 id="titulo-modal">Acessórios</h4>
               <div class="modalTexto">                  
                   <p>
                       Na KLV, não apenas oferecemos uma vasta linha de desktops, mas também uma ampla gama de acessórios que são cuidadosamente selecionados para atender às necessidades diversificadas dos nossos consumidores. Desde periféricos essenciais até produtos inovadores que elevam a experiência de uso, nossos acessórios foram projetados para proporcionar conveniência, funcionalidade e qualidade excepcionais.
@@ -509,7 +409,7 @@
                   <img src="imagens/segundo-carrossel/apple/macbookpro.gif" alt="" id="imagensMac">
               </div>
 
-              <h4 id="titulos">Linha Apple</h4>
+              <h4 id="titulo-modal">Linha Apple</h4>
               <div class="modalTexto">                  
                   <p>
                       Na KLV Reverse, oferecemos uma linha completa de produtos Apple, incluindo o iMac, MacBook Air e MacBook Pro. Se você é um entusiasta da tecnologia da Apple ou está procurando por dispositivos premium que combinem design elegante com desempenho excepcional, nossa seleção atende às suas necessidades. Desde o poderoso iMac para produtividade em casa ou no escritório até o MacBook Air ultrafino e leve para mobilidade sem comprometer o desempenho, e o MacBook Pro, projetado para profissionais que exigem o máximo em potência e recursos, temos tudo o que você precisa para entrar no ecossistema Apple. Explore nossa gama de produtos Apple na KLV Reverse e eleve sua experiência tecnológica para o próximo nível.
@@ -529,7 +429,7 @@
                   <img src="imagens/segundo-carrossel/apple/macbookpro.gif" alt="" id="imagensTotem">
               </div>
 
-              <h4 id="titulos">Totens</h4>
+              <h4 id="titulo-modal">Totens</h4>
               <div class="modalTexto">                  
                   <p>
                       Na KLV, oferecemos um serviço especializado de personalização de totens de autoatendimento interativos, projetados para atender às necessidades exclusivas de cada cliente. Nossa equipe altamente qualificada trabalha em estreita colaboração com você para entender suas metas e requisitos específicos, desde o design até a implementação.
