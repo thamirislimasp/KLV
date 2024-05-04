@@ -51,21 +51,30 @@ body {
 
 /* MODAL INICIAL */
 
+#modal-titulo {
+  padding: 20px 0;
+}
+
+#botao-modal {
+  display: flex;
+  justify-content: end;
+  /* margin: 20px; */
+}
+
 #enviar {
-  position: absolute;
-  left: 15%;
   background-color: rgba(15, 236, 11 , 0.5);
   color: #010326;
   border-radius: 5px;
   margin-top: 10px;
+  padding: 3px 5px;
 }
 
 .input {
   display: block;
   /* background-color: rgba(1, 3, 38 ,0.2); */
   border: solid 1px #0FEC0B;
-  border-radius: 5px;
-  margin: 5px 5px;
+  border-radius: 3px;
+  margin: 5px 0;
 }
 
 /* Estilo para cobrir a tela inteira */
@@ -90,7 +99,7 @@ body {
 
 #logo-formulario{
   display: flex;
-  justify-content: end;
+  justify-content: center;
   margin-top: 5px;
 }
 
@@ -789,9 +798,9 @@ footer {
     /* MODAL INICIAL */
 
     .input {
-      width: 90%;
+      width: 100%;
       height: 25px;
-      margin: 2% 5%;
+      /* margin: 2% 5%; */
     }
 
     .modal-conteudo {

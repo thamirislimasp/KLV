@@ -23,7 +23,7 @@
     <div id="meuModal" class="modalInicial">
       <div class="modal-conteudo">
           <span class="close" onclick="fecharModal()">&times;</span>
-          <h4>Cadastre-se e ganhe 5% de desconto na primeira compra !</h4>
+          <h4 id="modal-titulo">Cadastre-se e ganhe 5% de desconto na primeira compra !</h4>
 
           <form>           
            
@@ -37,11 +37,13 @@
             <input type="text" id="telefone" name="telefone" class="input" required>
        
             <label for="mensagem">Mensagem:</label>
-            <input type="text" id="mensagem" name="mensagem" class="input" required>
-       
-            <button id="enviar">Enviar</button>   
+            <input type="text" id="mensagem" name="mensagem" class="input" required>   
             
-          </form>
+            <div id="botao-modal">
+              <button id="enviar">Enviar</button>
+            </div>
+
+          </form>         
 
           <div id="logo-formulario"> 
             <img src="imagens/logo/logo klv.gif" id="logo-form">
